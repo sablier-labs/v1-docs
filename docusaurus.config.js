@@ -62,7 +62,7 @@ const config = {
             items: [
               {
                 label: "Twitter",
-                href: "https://twitter.com/SablierHQ",
+                href: "https://twitter.com/sablierhq",
               },
               {
                 label: "Discord",
@@ -70,7 +70,7 @@ const config = {
               },
               {
                 label: "Blog",
-                href: "https://blog.sablier.finance",
+                href: "https://medium.com/sablier",
               },
             ],
           },

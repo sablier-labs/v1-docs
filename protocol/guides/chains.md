@@ -4,7 +4,7 @@ title: Chains
 sidebar_position: 3
 ---
 
-Depending on what Ethereum chains you want to use Sablier on, you will need to use a different contract address. Sablier runs on top of one single master contract that manages all streams.
+Depending on what [EVM](https://ethereum.org/en/developers/docs/evm/) chains you want to use Sablier on, you will need to use a different contract address. Sablier runs on top of one single master contract that manages all streams.
 
 | Chain            | Address                                                                                                                          |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------- |
