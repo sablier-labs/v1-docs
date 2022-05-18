@@ -12,7 +12,7 @@ Depending on what [EVM](https://ethereum.org/en/developers/docs/evm/) chains you
 | Arbitrum One     | [0xaDB944B478818d95659067E70D2e5Fc43Fa3eDe9](https://arbiscan.io/address/0xaDB944B478818d95659067E70D2e5Fc43Fa3eDe9)             |
 | Avalanche        | [0x73f503fad13203C87889c3D5c567550b2d41D7a4](https://snowtrace.io/address/0x73f503fad13203C87889c3D5c567550b2d41D7a4)            |
 | BSC Mainnet      | [0x05BC7f5fb7F248d44d38703e5C921A8c16825161](https://bscscan.com/address/0x05BC7f5fb7F248d44d38703e5C921A8c16825161)             |
-| Optimism         | [0x6C5927c0679e6d857E87367bb635decbcB20F31c](https://optimistic.etherscan.io/address/0x05BC7f5fb7F248d44d38703e5C921A8c16825161) |
+| Optimism         | [0x6C5927c0679e6d857E87367bb635decbcB20F31c](https://optimistic.etherscan.io/address/0x6C5927c0679e6d857E87367bb635decbcB20F31c) |
 | Polygon Mainnet  | [0xAC18EAB6592F5fF6F9aCf5E0DCE0Df8E49124C06](https://polygonscan.com/address/0xAC18EAB6592F5fF6F9aCf5E0DCE0Df8E49124C06)         |
 | Rinkeby          | [0xC1f3af5DC05b0C51955804b2afc80eF8FeED67b9](https://rinkeby.etherscan.io/address/0xC1f3af5DC05b0C51955804b2afc80eF8FeED67b9)    |
 
