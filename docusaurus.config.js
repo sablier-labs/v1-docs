@@ -30,6 +30,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        appId: "KF9W3YD3YG",
+        apiKey: "02ccece2d4178d2816db18726d6d9ba8",
+        indexName: "sablier",
+      },
       colorMode: {
         // "light" | "dark"
         defaultMode: "light",
@@ -97,11 +102,6 @@ const config = {
           },
         ],
         style: "dark",
-      },
-      algolia: {
-        appId: "KF9W3YD3YG",
-        apiKey: "02ccece2d4178d2816db18726d6d9ba8",
-        indexName: "sablier",
       },
       navbar: {
         items: [
