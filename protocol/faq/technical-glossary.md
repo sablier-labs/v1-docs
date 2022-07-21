@@ -16,7 +16,7 @@ Permission-less scripts that:
 - Cannot be modified once deployed
 - Do exactly what you tell them to do
 
-### What are Arbitrum, Avalanche, BSC, Optimism, Polygon?
+### What are Arbitrum, Avalanche, BSC, Optimism, Polygon and Ronin?
 
 These are Ethereum-like chains that can run Ethereum smart contracts. Sablier is available on all of these chains. Please refer to their associated documentation for more information:
 
@@ -25,6 +25,7 @@ These are Ethereum-like chains that can run Ethereum smart contracts. Sablier is
 - [BSC](https://docs.binance.org/)
 - [Optimism](https://community.optimism.io/)
 - [Polygon](https://docs.polygon.technology/)
+- [Ronin](https://twitter.com/ronin_network)
 
 ### What is ERC-20?
 
