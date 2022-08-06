@@ -15,6 +15,6 @@ Subgraph information is serviced by a decentralized group of server operators ca
 
 [Creating an API Key Video Tutorial](https://www.youtube.com/watch?v=UrfIpm-Vlgs)
 
-- [Explorer Page](https://thegraph.com/explorer/subgraph?id=S9ihna8D733WTEShJ1KctSTCvY1VJ7gdVwhUujq4Ejo&view=Playground)
+- [Explorer Page][(https://thegraph.com/explorer/subgraph?id=S9ihna8D733WTEShJ1KctSTCvY1VJ7gdVwhUujq4Ejo&view=Playground)]
 - Graphql Endpoint: https://gateway.thegraph.com/api/[api-key]/subgraphs/id/A5XzhYZ4muyRegVTYmwWbCbKWvD4LTWqac43CEGTEGdK
 - [Code Repo](https://github.com/sablierhq/subgraph)
