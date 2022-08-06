@@ -57,8 +57,7 @@ Description: Needed for retroactively indexing cancellations and withdrawals for
 | Field | Type | Description |
 | ----------- | ----------- | ----------- |
 | type| StreamToSalary |   @entity  |
-|id:  | ID!  |  "The salary id"
-  salaryId: BigInt! |
+|salaryId: | BigInt! |  "The salary id"
 |  |  |  |
 |  |  |  |
 
