@@ -21,7 +21,7 @@ Description: Generic type for ERC-20 tokens.
 | name | String | The ERC-20 name |
 | symbol | String | The ERC-20 symbol |
 
-##  
+##   Cancellation
 Description: Generic type for Sablier cancellations type Cancellation @entity
 | Field | Type | Description |
 | ----------- | ----------- | ----------- |
@@ -51,94 +51,40 @@ Description: Generic type for Sablier streams.
 |withdrawals: |   [Withdrawal!] | @derivedFrom(field: "stream")
  
    
- 
-   
-
- 
-  
- 
-  
- 
-
-  
-}
-
-##  
+##  StreamToSalary
 Description: Needed for retroactively indexing cancellations and withdrawals for v1.0.0 streams.
 
 | Field | Type | Description |
 | ----------- | ----------- | ----------- |
-| id | ID! | type StreamToSalary @entity  |
-|  |  |  |
+| type| StreamToSalary |   @entity  |
+|id:  | ID!  |  "The salary id"
+  salaryId: BigInt! |
 |  |  |  |
 |  |  |  |
 
-"""
 
-"""
-{
-  "The stream id"
-  id: ID!
-  "The salary id"
-  salaryId: BigInt!
-}
-
-##  
-Description: 
+##  StreamTransaction
+Description: Transaction that interacted with a stream.
 
 | Field | Type | Description |
 | ----------- | ----------- | ----------- |
-| id | ID! |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| id | ID! | "Block number" |
+|   block: |  Int! |  "The name of the event emitted" |
+| event: |  String! | "The caller, or msg.sender" |
+|  from: | Bytes!  |  "The stream entity associated with this transaction" |
+|stream: | Stream!| "Block timestamp"|
+|timestamp:| BigInt!| "The contract address"|
+  
 
-"""
-Transaction that interacted with a stream.
-"""
-type StreamTransaction @entity {
-  "Transaction hash concatenated with log index"
-  id: ID!
-  "Block number"
-  block: Int!
-  "The name of the event emitted"
-  event: String!
-  "The caller, or msg.sender"
-  from: Bytes!
-  "The stream entity associated with this transaction"
-  stream: Stream!
-  "Block timestamp"
-  timestamp: BigInt!
-  "The contract address"
-  to: Bytes
-  "Transaction hash"
-  txhash: String!
-}
-
-##  
-Description: 
+##   Withdrawal
+Description: Generic type for Sablier withdrawals.
 
 | Field | Type | Description |
 | ----------- | ----------- | ----------- |
-| id | ID! |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| id | ID! | "How many tokens were withdrawn" |
+| amount: |BigInt!  | "The stream entity associated with this withdrawal" |
+| stream:  | Stream! |   "The time when the cancellation was made" |
+|  timestamp: | BigInt! | "The token used for payment" |
+|txhash: |  String!|"Transaction hash"
 
-"""
-Generic type for Sablier withdrawals.
-"""
-type Withdrawal @entity {
-  "Transaction hash concatenated with log index"
-  id: ID!
-  "How many tokens were withdrawn"
-  amount: BigInt!
-  "The stream entity associated with this withdrawal"
-  stream: Stream!
-  "The time when the cancellation was made"
-  timestamp: BigInt!
-  "The token used for payment"
-  token: Token
-  "Transaction hash"
-  txhash: String!
-}
+
