@@ -30,45 +30,37 @@ Description: Generic type for Sablier cancellations type Cancellation @entity
 |senderBalance:  | BigInt!|   "Amount of tokens the sender was distributed" |
 | timestamp: |BigInt!| "The time when the cancellation was made" |
 | token:|Token| "The token used for payment"|
-|token: Token | txhash: String!|"Transaction hash"
+|txhash: |  String!|"Transaction hash"
    
-##  
-Description: 
+##  Stream
+Description: Generic type for Sablier streams.
 
 | Field | Type | Description |
 | ----------- | ----------- | ----------- |
-| id | ID! |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| cancellation | Cancellation |"Details about cancellation time and the distributed amounts"  |
+|deposit:  |BigInt!|"The salary id in v1.0.0 and the actual stream id in v1.1.0"|
+| id: | ID!| "How much is being streamed every second"|
+|  ratePerSecond: |  BigInt! |   "The address of the recipient account" |
+|recipient:|  Bytes!|"The address of the sender account, who created the streamed"|
+|sender:|Bytes!| "The time when the stream commences"|
+| startTime:|BigInt!| "The time when the stream stops"|
+|stopTime:|BigInt!|  "The time when the stream was created"|
+|timestamp: |  BigInt!|"The token used for payment"|
+|token: |   Token. |"Exhaustive list of all transactions that interacted with the stream"|
+| txs: |[StreamTransaction!]@derivedFrom(field: "stream")|  "Exhaustive list of all withdrawals made from the stream"|
+|withdrawals: |   [Withdrawal!] | @derivedFrom(field: "stream")
+ 
+   
+ 
+   
 
-"""
-Generic type for Sablier streams.
-"""
-type Stream @entity {
-  "Details about cancellation time and the distributed amounts"
-  cancellation: Cancellation
-  deposit: BigInt!
-  "The salary id in v1.0.0 and the actual stream id in v1.1.0"
-  id: ID!
-  "How much is being streamed every second"
-  ratePerSecond: BigInt!
-  "The address of the recipient account"
-  recipient: Bytes!
-  "The address of the sender account, who created the streamed"
-  sender: Bytes!
-  "The time when the stream commences"
-  startTime: BigInt!
-  "The time when the stream stops"
-  stopTime: BigInt!
-  "The time when the stream was created"
-  timestamp: BigInt!
-  "The token used for payment"
-  token: Token
-  "Exhaustive list of all transactions that interacted with the stream"
-  txs: [StreamTransaction!] @derivedFrom(field: "stream")
-  "Exhaustive list of all withdrawals made from the stream"
-  withdrawals: [Withdrawal!] @derivedFrom(field: "stream")
+ 
+  
+ 
+  
+ 
+
+  
 }
 
 ##  
