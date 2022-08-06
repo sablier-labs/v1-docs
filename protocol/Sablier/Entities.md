@@ -26,9 +26,9 @@ Description: Generic type for Sablier cancellations type Cancellation @entity
 | Field | Type | Description |
 | ----------- | ----------- | ----------- |
 | id | ID! |The same as the stream id|
-|  id:| ID! | "Amount of tokens the recipient was distributed" |
-| recipientBalance |  BigInt! |   "Amount of tokens the sender was distributed" |
-| senderBalance: | BigInt! | "The time when the cancellation was made" |
+|  recipientBalance|  BigInt! | "Amount of tokens the recipient was distributed" |
+|senderBalance:  | BigInt!  |   "Amount of tokens the sender was distributed" |
+| senderBalance: |BigInt!| "The time when the cancellation was made" |
 
 """
 
@@ -88,19 +88,19 @@ type Stream @entity {
 }
 
 ##  
-Description: 
+Description: Needed for retroactively indexing cancellations and withdrawals for v1.0.0 streams.
 
 | Field | Type | Description |
 | ----------- | ----------- | ----------- |
-| id | ID! |  |
+| id | ID! | type StreamToSalary @entity  |
 |  |  |  |
 |  |  |  |
 |  |  |  |
 
 """
-Needed for retroactively indexing cancellations and withdrawals for v1.0.0 streams.
+
 """
-type StreamToSalary @entity {
+{
   "The stream id"
   id: ID!
   "The salary id"
