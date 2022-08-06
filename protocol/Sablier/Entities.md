@@ -27,7 +27,7 @@ Description: Generic type for Sablier cancellations type Cancellation @entity
 | ----------- | ----------- | ----------- |
 | id | ID! |The same as the stream id|
 |  recipientBalance|  BigInt! | "Amount of tokens the recipient was distributed" |
-|senderBalance:  | BigInt!  |   "Amount of tokens the sender was distributed" |
+|senderBalance:  | BigInt!|   "Amount of tokens the sender was distributed" |
 | senderBalance: |BigInt!| "The time when the cancellation was made" |
 
 """
