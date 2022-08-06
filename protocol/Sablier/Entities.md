@@ -26,29 +26,29 @@ Description: Generic type for Sablier cancellations type Cancellation @entity
 | Field | Type | Description |
 | ----------- | ----------- | ----------- |
 | id | ID! |The same as the stream id|
-|  recipientBalance|  BigInt! | "Amount of tokens the recipient was distributed" |
-|senderBalance:  | BigInt!|   "Amount of tokens the sender was distributed" |
-| timestamp: |BigInt!| "The time when the cancellation was made" |
-| token:|Token| "The token used for payment"|
-|txhash: |  String!|"Transaction hash"
+|  recipientBalance|  BigInt! | Amount of tokens the recipient was distributed |
+|senderBalance  | BigInt!|   Amount of tokens the sender was distributed |
+| timestamp |BigInt!| The time when the cancellation was made |
+| token|Token| The token used for payment|
+|txhash |  String!|Transaction hash|
    
 ##  Stream
 Description: Generic type for Sablier streams.
 
 | Field | Type | Description |
 | ----------- | ----------- | ----------- |
-| cancellation | Cancellation |"Details about cancellation time and the distributed amounts"  |
-|deposit:  |BigInt!|"The address of the recipient account"|
-| id: | ID!| "The salary id in v1.0.0 and the actual stream id in v1.1.0"|
-|  ratePerSecond: |  BigInt! |   "How much is being streamed every second"|
-|recipient:|  Bytes!|"The address of the recipient account"|
-|sender:|Bytes!| "The address of the sender account, who created the streamed"|
-| startTime:|BigInt!|  "The time when the stream commences"|
-|stopTime:|BigInt!|  "The time when the stream stops"|
-|timestamp: |  BigInt!|"The time when the stream was created"|
-|token: |   Token. | "The token used for payment"|
-| txs: |[StreamTransaction!]@derivedFrom(field: "stream")|  "Exhaustive list of all transactions that interacted with the stream"|
-|withdrawals: |   [Withdrawal!] |"Exhaustive list of all withdrawals made from the stream"|
+| cancellation | Cancellation |Details about cancellation time and the distributed amounts  |
+|deposit  |BigInt!|The address of the recipient account|
+| id | ID!| The salary id in v1.0.0 and the actual stream id in v1.1.0|
+|  ratePerSecond |  BigInt! |   How much is being streamed every second|
+|recipient|  Bytes!|The address of the recipient account|
+|sender|Bytes!| The address of the sender account, who created the streamed|
+| startTime|BigInt!|  The time when the stream commences|
+|stopTime|BigInt!|  The time when the stream stops|
+|timestamp |  BigInt!|The time when the stream was created|
+|token |   Token | The token used for payment|
+| txs|[StreamTransaction!]@derivedFrom(field: "stream")|  "Exhaustive list of all transactions that interacted with the stream"|
+|withdrawals|   [Withdrawal!] |"Exhaustive list of all withdrawals made from the stream"|
  
    
 ##  StreamToSalary
@@ -56,8 +56,8 @@ Description: Needed for retroactively indexing cancellations and withdrawals for
 
 | Field | Type | Description |
 | ----------- | ----------- | ----------- |
-| id:| ID!|  "The stream id" |
-|salaryId: | BigInt! |  "The salary id"
+| id| ID!|  "The stream id" |
+|salaryId | BigInt! |  "The salary id"
 
 ##  StreamTransaction
 Description: Transaction that interacted with a stream.
@@ -65,13 +65,13 @@ Description: Transaction that interacted with a stream.
 | Field | Type | Description |
 | ----------- | ----------- | ----------- |
 | id | ID! | "Transaction hash concatenated with log index"|
-| block: |  Int! | "Block number" |
-| event: |  String! |  "The name of the event emitted" |
-|  from: | Bytes!  |  "The caller, or msg.sender"|
-|stream: | Stream! |  "The stream entity associated with this transaction"|
-|timestamp:| BigInt!| "Block timestamp"|
+| block |  Int! | "Block number" |
+| event |  String! |  "The name of the event emitted" |
+|  from | Bytes!  |  "The caller, or msg.sender"|
+|stream | Stream! |  "The stream entity associated with this transaction"|
+|timestamp| BigInt!| "Block timestamp"|
 |to:|Bytes|  "The contract address" | 
-|  txhash: | String!| "Transaction hash" |
+|  txhash | String!| "Transaction hash" |
 
 ##   Withdrawal
 Description: Generic type for Sablier withdrawals.
@@ -79,9 +79,9 @@ Description: Generic type for Sablier withdrawals.
 | Field | Type | Description |
 | ----------- | ----------- | ----------- |
 | id | ID! | "Transaction hash concatenated with log index"|
-| amount: |BigInt!  | "How many tokens were withdrawn"|
-| stream:  | Stream! |   "The stream entity associated with this withdrawal"|
-|  timestamp: | BigInt! | "The time when the cancellation was made" |
-|txhash: |  String!|"Transaction hash"|
+| amount |BigInt!  | "How many tokens were withdrawn"|
+| stream  | Stream! |   "The stream entity associated with this withdrawal"|
+|  timestamp | BigInt! | "The time when the cancellation was made" |
+|txhash |  String!|"Transaction hash"|
 
 
