@@ -29,23 +29,15 @@ Description: Generic type for Sablier cancellations type Cancellation @entity
 |  recipientBalance|  BigInt! | "Amount of tokens the recipient was distributed" |
 |senderBalance:  | BigInt!|   "Amount of tokens the sender was distributed" |
 | senderBalance: |BigInt!| "The time when the cancellation was made" |
-
-"""
-
-"""
-{
-  ""
-   ID!ID!
-  
-  :
-
+|timestamp: | BigInt! | "The token used for payment"|
+|token: Token |"Transaction hash"| | txhash: String!
    
   
-  timestamp: BigInt!
-  "The token used for payment"
-  token: Token
+  
+  
+  
   "Transaction hash"
-  txhash: String!
+ 
 }
 
 ##  
