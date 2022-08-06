@@ -67,13 +67,14 @@ Description: Transaction that interacted with a stream.
 
 | Field | Type | Description |
 | ----------- | ----------- | ----------- |
+|
 | id | ID! | "Block number" |
 |   block: |  Int! |  "The name of the event emitted" |
 | event: |  String! | "The caller, or msg.sender" |
-|  from: | Bytes!  |  "The stream entity associated with this transaction" |
-|stream: | Stream!| "Block timestamp"|
-|timestamp:| BigInt!| "The contract address"|
-  
+|  from: | Bytes!  | "The stream entity associated with this transaction"
+|stream: | Stream!| | "Block timestamp"
+|timestamp:| BigInt!| The contract address"|
+|to:|Bytes|"Transaction hash"  
 
 ##   Withdrawal
 Description: Generic type for Sablier withdrawals.
