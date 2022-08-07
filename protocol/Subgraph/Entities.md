@@ -22,7 +22,7 @@ Description: Generic type for ERC-20 tokens.
 | symbol | String | The ERC-20 symbol |
 
 ##   Cancellation
-Description: Generic type for Sablier cancellations type Cancellation @entity
+Description: Generic type for Sablier cancellations
 | Field | Type | Description |
 | ----------- | ----------- | ----------- |
 | id | ID! |The same as the stream id|
