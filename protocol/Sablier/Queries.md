@@ -5,27 +5,26 @@ title: Sample Queries
 
 ## Sample Queries
 
-Below are some sample queries you can use to gather information from the Rocket Pool contracts. 
+Below are some sample queries you can use to gather information from the Sablier contracts. 
 
 You can build your own queries using a [GraphQL Explorer](https://graphiql-online.com/graphiql) and enter your endpoint to limit the data to exactly what you need.
 
-### Node Metrics
-Get the latest metrics for nodes on the network
+### Token
+Unsure what to put here
 
 ```
-query NodeOverview {
-  nodeBalanceCheckpoints(first: 1, orderBy: id, orderDirection: desc) {
-    averageFeeForActiveMinipools
-    averageNodeRewardClaim
-    averageODAORewardClaim
-    maximumEffectiveRPL
-    minimumEffectiveRPL
-    rplStaked
-    stakingMinipools
-    totalFinalizedMinipools
-    stakingUnbondedMinipools
-    totalNodeRewardsClaimed
-    queuedMinipools
+{
+  tokens(first: 5) {
+    id
+    decimals
+    name
+    symbol
+  }
+  cancellations(first: 5) {
+    id
+    recipientBalance
+    senderBalance
+    timestamp
   }
 }
 ```
