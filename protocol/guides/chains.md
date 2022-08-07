@@ -14,8 +14,11 @@ Depending on what [EVM](https://ethereum.org/en/developers/docs/evm/) chains you
 | BSC Mainnet      | [0x05BC7f5fb7F248d44d38703e5C921A8c16825161](https://bscscan.com/address/0x05BC7f5fb7F248d44d38703e5C921A8c16825161)                 |
 | Optimism         | [0x6C5927c0679e6d857E87367bb635decbcB20F31c](https://optimistic.etherscan.io/address/0x6C5927c0679e6d857E87367bb635decbcB20F31c)     |
 | Polygon Mainnet  | [0xAC18EAB6592F5fF6F9aCf5E0DCE0Df8E49124C06](https://polygonscan.com/address/0xAC18EAB6592F5fF6F9aCf5E0DCE0Df8E49124C06)             |
-| Rinkeby          | [0xC1f3af5DC05b0C51955804b2afc80eF8FeED67b9](https://rinkeby.etherscan.io/address/0xC1f3af5DC05b0C51955804b2afc80eF8FeED67b9)        |
 | Ronin            | [0xDe9dCc27aa1552d591Fc9B9c21881feE43BD8118](https://explorer.roninchain.com/address/ronin:de9dcc27aa1552d591fc9b9c21881fee43bd8118) |
+| Goerli           | [0xFc7E3a3073F88B0f249151192812209117C2014b](https://goerli.etherscan.io/address/0xFc7E3a3073F88B0f249151192812209117C2014b)         |
+| Rinkeby          | [0xC1f3af5DC05b0C51955804b2afc80eF8FeED67b9](https://rinkeby.etherscan.io/address/0xC1f3af5DC05b0C51955804b2afc80eF8FeED67b9)        |
+| Kovan            | [0x5eb34b5d5c75ce2119078e5b3f6a3f30e457e46b](https://kovan.etherscan.io/address/0x5eb34b5d5c75ce2119078e5b3f6a3f30e457e46b)          |
+| Ropsten          | [0xcd79FFea8e2E6eFDAe92554Fdd1F154bB7c62D0f](https://ropsten.etherscan.io/address/0xcd79FFea8e2E6eFDAe92554Fdd1F154bB7c62D0f)        |
 
 ### Testnet Tokens
 
@@ -27,4 +30,7 @@ Note that the testnet token has 18 decimals, so you may want to use a [unit conv
 
 | Chain      | Network | Ethereum address                                                                                                              |
 | ---------- | ------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| TestnetDAI | Goerli  | [0x97cb342Cf2F6EcF48c1285Fb8668f5a4237BF862](https://goerli.etherscan.io/address/0x97cb342Cf2F6EcF48c1285Fb8668f5a4237BF862)  |
 | TestnetDAI | Rinkeby | [0x5eD8BD53B0c3fa3dEaBd345430B1A3a6A4e8BD7C](https://rinkeby.etherscan.io/address/0x5eD8BD53B0c3fa3dEaBd345430B1A3a6A4e8BD7C) |
+| TestnetDAI | Kovan   | [0x79dfab686Ef87cd2c871D5182F08538589234189](https://kovan.etherscan.io/address/0x79dfab686Ef87cd2c871D5182F08538589234189)   |
+| TestnetDAI | Ropsten | [0x3ac1c6ff50007ee705f36e40F7Dc6f393b1bc5e7](https://ropsten.etherscan.io/address/0x3ac1c6ff50007ee705f36e40F7Dc6f393b1bc5e7) |
