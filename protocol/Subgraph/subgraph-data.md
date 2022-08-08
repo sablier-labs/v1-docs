@@ -7,16 +7,18 @@ title: Subgraph Data Introduction
 
 Sablier has a GraphQL API Endpoint hosted by [The Graph](https://thegraph.com/docs/about/introduction#what-the-graph-is) called a subgraph for indexing and organizing data from the Sablier smart contracts.
 
-This subgraph can be used to query Sablier data.
-
-Subgraph information is serviced by a decentralized group of server operators called Indexers.
+This subgraph can be used to query Sablier data. The data is serviced by a decentralized group of server operators called Indexers.
 
 ## Ethereum Mainnet
 
-[Creating an API Key Video Tutorial](https://www.youtube.com/watch?v=UrfIpm-Vlgs)
-
+- [Creating an API Key Video Tutorial](https://youtube.com/watch?v=UrfIpm-Vlgs)
 - [Explorer Page](https://thegraph.com/explorer/subgraph?id=A5XzhYZ4muyRegVTYmwWbCbKWvD4LTWqac43CEGTEGdK&view=Playground)
-- [GraphQL Endpoint](https://gateway.thegraph.com/api/[api-key]/subgraphs/id/A5XzhYZ4muyRegVTYmwWbCbKWvD4LTWqac43CEGTEGdK)*
 - [Subgraph Source Code](https://github.com/sablierhq/subgraph)
 
-*You will need to change the [api-key] to the API key you generate.
+If you'd like to use the GraphQL Endpoint in your app, you can use the following URL:
+
+```text
+https://gateway.thegraph.com/api/YOUR_API_KEY/subgraphs/id/A5XzhYZ4muyRegVTYmwWbCbKWvD4LTWqac43CEGTEGdK
+```
+
+Where you have to replace `YOUR_API_KEY` with your generated API Key.
