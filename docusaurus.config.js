@@ -106,6 +106,11 @@ const config = {
       navbar: {
         items: [
           {
+            href: "/protocol/faq/basics",
+            label: "FAQ",
+            position: "left",
+          },
+          {
             href: "/protocol/guides/getting-started",
             label: "Guides",
             position: "left",
@@ -116,8 +121,8 @@ const config = {
             position: "left",
           },
           {
-            href: "/protocol/faq/basics",
-            label: "FAQ",
+            href: "/protocol/subgraph/endpoints",
+            label: "Subgraph",
             position: "left",
           },
           {
