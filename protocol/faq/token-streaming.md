@@ -1,6 +1,6 @@
 ---
-id: money-streaming
-title: Money Streaming
+id: token-streaming
+title: Token Streaming
 sidebar_position: 3
 ---
 
@@ -22,7 +22,7 @@ In our web interface, the start time is automatically set to ~15 minutes after t
 
 ### How does streaming work?
 
-Dividing the deposit amount by the difference between the stop time and the start time gives us a payment rate per second. Sablier uses this rate to transfer a little bit of money from the sender to the recipient once every second.
+Dividing the deposit amount by the difference between the stop time and the start time gives us a payment rate per second. Sablier uses this rate to transfer a small portion of tokens from the sender to the recipient once every second.
 
 For instance, if the payment rate was 0.01 DAI per second, the recipient would receive:
 
@@ -30,13 +30,13 @@ For instance, if the payment rate was 0.01 DAI per second, the recipient would r
 - 0.01 \* 60 \* 60 = 36 DAI / hour
 - 0.01 \* 60 \* 60 \* 24 = 864 DAI / day
 
-### Where is the money held?
+### Where are the tokens held?
 
 In our smart contracts. You can verify this assertion by inspecting [Etherscan](https://etherscan.io/address/0xcd18eaa163733da39c232722cbc4e8940b1d8888) or any other blockchain explorer.
 
-### How can recipients access their money?
+### How can recipients access their tokens?
 
-As the money is being streamed at the smart contract level, recipients can consider Sablier their real-time wallet for digital currency.
+As the tokens are being streamed at the smart contract level, recipients can consider Sablier their real-time wallet for digital currency.
 
 To make withdrawals, recipients can:
 

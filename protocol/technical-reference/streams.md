@@ -4,10 +4,10 @@ title: Streams
 sidebar_position: 1
 ---
 
-Every interaction with the Sablier protocol is in relation to a specific "money stream". This is how we refer to a
+Every interaction with the Sablier protocol is in relation to a specific "token stream". This is how we refer to a
 real-time payment.
 
-A money stream has six properties:
+A token stream has six properties:
 
 1. Sender.
 2. Recipient.

@@ -7,7 +7,7 @@ sidebar_position: 2
 ## Create stream
 
 The create stream function transfers the tokens into the Sablier smart contract, stamping the rules of the stream into
-the blockchain. As soon as the chain clock hits the start time of the stream, a little bit of money starts getting
+the blockchain. As soon as the chain clock hits the start time of the stream, a small portion of tokens starts getting
 "transferred" from the sender to the recipient once every second.
 
 We used scare quotes because what actually happens is not a transfer, but rather an abstract allocation of funds. Every
@@ -19,8 +19,8 @@ function createStream(address recipient, uint256 deposit, address tokenAddress, 
 ```
 
 - `msg.sender`: The account who funds the stream, and pay the recipient in real-time.
-- `recipient`: The account toward which the money will be streamed.
-- `deposit`: The amount of money to be streamed, in units of the streaming currency.
+- `recipient`: The account toward which the tokens will be streamed.
+- `deposit`: The amount of tokens to be streamed, in units of the streaming currency.
 - `tokenAddress`: The address of the ERC-20 token to use as streaming currency.
 - `startTime`: The unix timestamp for when the stream starts, in seconds.
 - `stopTime`: The unix timestamp for when the stream stops, in seconds.
@@ -87,7 +87,7 @@ await createStreamTx.wait();
 
 ## Withdraw from Stream
 
-The withdraw from stream function transfers an amount of money from the Sablier contract to the recipient's account. The
+The withdraw from stream function transfers an amount of tokens from the Sablier contract to the recipient's account. The
 withdrawn amount must be less than or equal to the available [balance](./constant-functions#balance-of). This function can only be
 called by the sender or the recipient of the stream, not any third-party.
 
@@ -95,8 +95,8 @@ called by the sender or the recipient of the stream, not any third-party.
 function withdrawFromStream(uint256 streamId, uint256 amount) returns (bool);
 ```
 
-- `streamId`: The id of the stream to withdraw money from.
-- `amount`: The amount of money to withdraw.
+- `streamId`: The id of the stream to withdraw tokens from.
+- `amount`: The amount of tokens to withdraw.
 - `RETURN`: True on success, reverts on error.
 
 :::info
@@ -126,10 +126,10 @@ await withdrawFromStreamTx.wait();
 
 ## Cancel Stream
 
-The cancel stream function revokes a previously created stream and returns the money back to the sender and/or the
-recipient. If the chain clock did not hit the start time, all the money is returned to the sender. If the chain clock did go
+The cancel stream function revokes a previously created stream and returns the tokens back to the sender and/or the
+recipient. If the chain clock did not hit the start time, all the tokens is returned to the sender. If the chain clock did go
 past the start time, but not past the stop time, the sender and the recipient each get a pro-rata amount. Finally, if
-the chain clock went past the stop time, all the money goes the recipient. This function can be called only by the sender.
+the chain clock went past the stop time, all the tokens goes the recipient. This function can be called only by the sender.
 
 ```solidity
 function cancelStream(uint256 streamId) returns (bool);
