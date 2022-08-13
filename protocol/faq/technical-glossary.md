@@ -37,11 +37,11 @@ Sablier is compatible with ERC-20 tokens only, such as [DAI](https://makerdao.co
 
 A real-time payment, made up of six properties:
 
-| Name       | Description                      |
-| ---------- | -------------------------------  |
-| Sender     | Ethereum address                 |
-| Recipient  | Ethereum address                 |
-| Deposit    | Total amount of tokens to stream |
-| Token      | ERC-20 token address             |
-| Start time | When the token streaming starts  |
-| Stop time  | When the token streaming stops   |
+| Name       | Description                                  |
+| ---------- | -------------------------------------------- |
+| Sender     | Ethereum address                             |
+| Recipient  | Ethereum address                             |
+| Deposit    | Total amount of tokens to stream             |
+| Token      | ERC-20 token address                         |
+| Start time | The Unix timestamp when the streaming starts |
+| Stop time  | The Unix timestamp when the streaming stops  |

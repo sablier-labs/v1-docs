@@ -32,7 +32,7 @@ For instance, if the payment rate was 0.01 DAI per second, the recipient would r
 
 ### Where are the tokens held?
 
-In our smart contracts. You can verify this assertion by inspecting [Etherscan](https://etherscan.io/address/0xcd18eaa163733da39c232722cbc4e8940b1d8888) or any other blockchain explorer.
+In our smart contracts. You can verify this assertion by inspecting [Etherscan](https://etherscan.io/address/0xCD18eAa163733Da39c232722cBC4E8940b1D8888) or any other blockchain explorer.
 
 ### How can recipients access their tokens?
 

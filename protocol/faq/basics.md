@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ### Where can I access the Sablier protocol?
 
-You can access Sablier through our branded web interfaces:
+You can access Sablier through the following web interfaces:
 
 - [pay.sablier.finance](https://pay.sablier.finance) (streaming tokens)
 - [app.sablier.finance](https://app.sablier.finance) (withdrawing the streamed tokens)
@@ -25,9 +25,9 @@ An alternative wording, [coined](https://www.youtube.com/watch?v=gF_ZQ_eijPs) by
 
 ### How does streaming work on Sablier?
 
-Imagine Alice wants to send 3,000 DAI over to Bob during the whole month of January.
+Imagine Alice wants to make a 3,000 DAI payment to Bob during the whole month of January.
 
-1. Alice makes the 3,000 DAI deposit in the Sablier contract _before_ Jan 1, setting the stop time to Feb 1.
+1. Alice deposits the 3,000 DAI in Sablier _before_ Jan 1, setting the stop time to Feb 1.
 2. Bob's crypto earnings increase every second beginning Jan 1.
 3. On Jan 10, Bob will have earned approximately 1,000 DAI.
 4. If at any point during January Alice wishes to recover her tokens, she can cancel the stream and recover what
