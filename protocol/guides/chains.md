@@ -6,6 +6,10 @@ sidebar_position: 3
 
 Depending on what [EVM](https://ethereum.org/en/developers/docs/evm/) chains you want to use Sablier on, you will need to use a different contract address. Sablier runs on top of one single master contract that manages all streams.
 
+### Official deployments
+
+Official deployments are deployments made by the Sablier team and supported in the [official user interface](https://pay.sablier.finance).
+
 | Chain            | Address                                                                                                                              |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | Ethereum Mainnet | [0xCD18eAa163733Da39c232722cBC4E8940b1D8888](https://etherscan.io/address/0xCD18eAa163733Da39c232722cBC4E8940b1D8888)                |
@@ -19,6 +23,14 @@ Depending on what [EVM](https://ethereum.org/en/developers/docs/evm/) chains you
 | Rinkeby          | [0xC1f3af5DC05b0C51955804b2afc80eF8FeED67b9](https://rinkeby.etherscan.io/address/0xC1f3af5DC05b0C51955804b2afc80eF8FeED67b9)        |
 | Kovan            | [0x5eb34b5d5c75ce2119078e5b3f6a3f30e457e46b](https://kovan.etherscan.io/address/0x5eb34b5d5c75ce2119078e5b3f6a3f30e457e46b)          |
 | Ropsten          | [0xcd79FFea8e2E6eFDAe92554Fdd1F154bB7c62D0f](https://ropsten.etherscan.io/address/0xcd79FFea8e2E6eFDAe92554Fdd1F154bB7c62D0f)        |
+
+### Unofficial deployments
+
+Unofficial deployments are deployments made by an external team and not supported in the [official user interface](https://pay.sablier.finance).
+
+| Chain | Address                                                                                                                | Deployer                                   |
+| ----- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| IoTeX | [0x93Efd750a7F589f9FE26408a91e15587a88c4E78](https://iotexscout.io/address/0x93Efd750a7F589f9FE26408a91e15587a88c4E78) | [IoTeX team](https://twitter.com/iotex_io) |
 
 ### Testnet Tokens
 
