@@ -10,7 +10,7 @@ title: Subgraph Entities
 - [`Stream`](#stream)
 - [`StreamToSalary`](#streamtosalary)
 - [`StreamTransaction`](#streamtransaction)
-- ['Withdrawal'](#withdrawal)
+- [`Withdrawal`](#withdrawal)
 
 ## Token
 
