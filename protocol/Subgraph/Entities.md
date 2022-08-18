@@ -8,7 +8,7 @@ title: Subgraph Entities
 - [`Token`](#token)
 - [`Cancellation`](#cancellation)
 - [`Stream`](#stream)
-- [`StreamToSalary`](#streamtosalary
+- [`StreamToSalary`](#streamtosalary)
 - [`StreamTransaction`](#streamtransaction)
 - ['Withdrawal'](#withdrawal)
 
