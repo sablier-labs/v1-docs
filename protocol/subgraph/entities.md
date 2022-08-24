@@ -3,12 +3,12 @@ sidebar_position: 2
 title: Entities
 ---
 
-- Token
-- Cancellation
-- Stream
-- StreamToSalary
-- StreamTransaction
-- Withdrawal
+- [`Token`](#token)
+- [`Cancellation`](#cancellation)
+- [`Stream`](#stream)
+- [`StreamToSalary`](#streamtosalary)
+- [`StreamTransaction`](#streamtransaction)
+- [`Withdrawal`](#withdrawal)
 
 ## Token
 
