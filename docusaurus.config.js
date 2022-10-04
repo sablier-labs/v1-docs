@@ -35,6 +35,14 @@ const config = {
         apiKey: "02ccece2d4178d2816db18726d6d9ba8",
         indexName: "sablier",
       },
+      announcementBar: {
+        id: 'start_time_banner',
+        content:
+				'Please note that a stream transaction MUST be processed by the blockchain before the start time of the stream, it will fail otherwise. Questions? Head over to our <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/bSwRCwWRsT">Discord</a>!',
+        backgroundColor: '#E77B3B',
+        textColor: '#fff',
+        isCloseable: true,
+      },
       colorMode: {
         // "light" | "dark"
         defaultMode: "light",

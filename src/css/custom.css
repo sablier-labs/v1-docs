@@ -15,6 +15,7 @@
   --ifm-color-primary-lightest: #fcc7a7;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-announcement-bar-height: auto;
 }
 
 .docusaurus-highlight-code-line {
@@ -60,4 +61,27 @@
   --docsearch-hit-active-color: var(--ifm-color-white);
   --docsearch-hit-background: var(--ifm-color-emphasis-100);
   --docsearch-footer-background: var(--ifm-background-surface-color);
+}
+
+div[class^="announcementBar"][role="banner"] {
+  border-bottom-color: #E77B3B;
+}
+
+div[class^="announcementBarContent"] {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .announcement {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .announcement {
+    font-size: 10px;
+    line-height: 22px;
+    padding: 6px 30px;
+  }
 }
