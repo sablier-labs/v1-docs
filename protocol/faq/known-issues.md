@@ -4,7 +4,7 @@ title: Known Issues
 sidebar_position: 6
 ---
 
-There are several known issues with the current version of Sablier, v1.1. These will all be fixed in a future version, Sablier v2.
+There are several known issues with the current version of the protocol, Sablier v1.1. These will all be fixed in a future version, Sablier v2.
 
 ### Start Time
 
