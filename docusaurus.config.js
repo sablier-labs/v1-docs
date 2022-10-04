@@ -38,7 +38,7 @@ const config = {
       announcementBar: {
         id: 'start_time_banner',
         content:
-				'Please note that a stream transaction MUST be processed by the blockchain before the start time of the stream, it will fail otherwise. Questions? Head over to our <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/bSwRCwWRsT">Discord</a>!',
+				'Beware of the shortcomings of v1, please <a target="_blank" rel="noopener noreferrer" href="/protocol/faq/known-issues">check the list of well known issues</a> before creating a stream, or reach out on <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/bSwRCwWRsT">Discord</a>.',
         backgroundColor: '#E77B3B',
         textColor: '#fff',
         isCloseable: true,
@@ -132,6 +132,11 @@ const config = {
             href: "/protocol/subgraph/endpoints",
             label: "Subgraph",
             position: "left",
+          },
+          {
+            href: "https://discord.gg/bSwRCwWRsT",
+            label: "Discord",
+            position: "right",
           },
           {
             href: "https://github.com/sablierhq",
