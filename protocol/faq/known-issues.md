@@ -4,13 +4,17 @@ title: Known Issues
 sidebar_position: 6
 ---
 
-There are several known issues with the current version of the protocol, Sablier v1.1. These will all be fixed in a future version, Sablier v2.
+There are several known issues and limitations with the current version of the protocol, Sablier V1.1. These will all be
+fixed in a future version, Sablier V2. We cannot fix them in V1.1 because the smart contracts are immutable.
 
 ### Start Time
 
-A stream transaction **MUST** be processed by the blockchain before the start time of the stream. If the transaction is processed after the start time of the stream, the transaction will revert (fail) with a "start time before block.timestamp" message.
+A stream transaction **MUST** be processed by the blockchain before the start time of the stream. If the transaction is
+processed after the start time of the stream, the transaction will revert (fail) with the following error:
 
-If you are working on a proposal involving the use of a stream, make sure to set to the start time of the stream sufficiently far away in time so that the proposal passes and the transaction gets mined before the start time of the stream.
+> start time before block.timestamp
+
+If you are a DAO and working on a proposal involving the creation of a stream, make sure to set to the start time of the stream sufficiently far away in time so that the proposal passes and the transaction gets mined before the start time of the stream.
 
 ### The Deposit Gotcha
 
@@ -23,7 +27,7 @@ For example, if:
 
 You will have to stream 2999999999999998944000 instead of 3000000000000000000000. The former divides evenly by 2592000, but the latter doesn't.
 
-### Zero-decimal tokens
+### Zero-decimal Tokens
 
 This is only a problem in exceptional cases, as most tokens have 18 decimals, but we strongly advise against the use of tokens with 3 decimals or less in Sablier. It can lead to all sorts of problems, and the protocol was designed for tokens with at least 4 decimals.
 
