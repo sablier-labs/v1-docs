@@ -25,7 +25,7 @@ You will have to stream 2999999999999998944000 instead of 3000000000000000000000
 
 ### Zero-decimal tokens
 
-This is only a problem in exceptional cases, as most tokens have 18 decimals, but we strongly advise against the use of tokens with 0 decimals in Sablier. It can lead to all sorts of problems, and the protocol was designed for tokens with at least 1 decimal.
+This is only a problem in exceptional cases, as most tokens have 18 decimals, but we strongly advise against the use of tokens with 3 decimals or less in Sablier. It can lead to all sorts of problems, and the protocol was designed for tokens with at least 4 decimals.
 
 :::info
 Questions? Head over to the [Sablier Discord](https://discord.gg/bSwRCwWRsT) where the community can answer them.
