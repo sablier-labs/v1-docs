@@ -18,7 +18,7 @@ to the recipient. Actually transferring the tokens would be excessively expensiv
 function createStream(address recipient, uint256 deposit, address tokenAddress, uint256 startTime, uint256 stopTime) returns (uint256)
 ```
 
-- `msg.sender`: The account who funds the stream, and pay the recipient in real-time.
+- `msg.sender`: The account who funds the stream, and pays the recipient in real-time.
 - `recipient`: The account toward which the tokens will be streamed.
 - `deposit`: The amount of tokens to be streamed, in units of the streaming currency.
 - `tokenAddress`: The address of the ERC-20 token to use as streaming currency.
@@ -31,7 +31,8 @@ Before creating a stream, users must first [approve](https://eips.ethereum.org/E
 :::
 
 :::warning
-The transaction must be processed by the Ethereum blockchain before the start time of the stream, or otherwise the contract reverts with a "start time before block.timestamp" message.
+The transaction must be processed by the Ethereum blockchain before the start time of the stream, or otherwise the
+contract will revert with a "start time before block.timestamp" message.
 :::
 
 ### The Deposit Gotcha
