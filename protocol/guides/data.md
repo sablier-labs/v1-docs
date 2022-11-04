@@ -16,4 +16,3 @@ If you want to see some example queries, see the README at [sablierhq/sablier-su
 | BSC Mainnet      | https://thegraph.com/hosted-service/subgraph/sablierhq/sablier-bsc       |
 | Optimism         | https://thegraph.com/hosted-service/subgraph/sablierhq/sablier-optimism  |
 | Polygon Mainnet  | https://thegraph.com/hosted-service/subgraph/sablierhq/sablier-matic     |
-| Rinkeby          | https://thegraph.com/hosted-service/subgraph/sablierhq/sablier-rinkeby   |
