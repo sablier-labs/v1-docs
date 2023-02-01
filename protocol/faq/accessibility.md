@@ -6,7 +6,7 @@ sidebar_position: 5
 
 ### What can Sablier be used for?
 
-We came up with a few ideas in [this discussion on Twitter](https://twitter.com/SablierHQ/status/1205533344886411264), but the sky is the limit.
+We came up with a few ideas in [this discussion on Twitter](https://twitter.com/Sablier/status/1205533344886411264), but the sky is the limit.
 
 ### Who can use Sablier?
 

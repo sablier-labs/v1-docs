@@ -75,7 +75,7 @@ const config = {
             items: [
               {
                 label: "Twitter",
-                href: "https://twitter.com/sablierhq",
+                href: "https://twitter.com/sablier",
               },
               {
                 label: "Discord",
