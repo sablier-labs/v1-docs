@@ -15,17 +15,22 @@ jobs:
       - name: "Check out the repo"
         uses: "actions/checkout@v3"
 
+      - name: "Install Pnpm"
+        uses: "pnpm/action-setup@v2"
+        with:
+          version: "latest"
+
       - name: "Install Node.js"
         uses: "actions/setup-node@v3"
         with:
-          cache: "yarn"
-          node-version: "16"
+          cache: "pnpm"
+          node-version: "lts/*"
 
       - name: "Install the dependencies"
-        run: "yarn install --immutable"
+        run: "pnpm install"
 
       - name: "Build the app"
-        run: "yarn build"
+        run: "pnpm build"
 
       - name: "Deploy to Vercel"
         uses: "amondnet/vercel-action@v20"

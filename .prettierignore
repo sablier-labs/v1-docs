@@ -1,5 +1,4 @@
 # directories
-.yarn/
 **/.cache-loader
 **/.docusaurus
 **/build
@@ -10,7 +9,8 @@
 *.env
 *.log
 *.tsbuildinfo
+.DS_Store
 .pnp.*
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+npm-debug.log
+package-lock.json
+yarn.lock
