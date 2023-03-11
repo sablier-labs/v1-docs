@@ -4,11 +4,13 @@ title: Chains
 sidebar_position: 3
 ---
 
-Depending on what [EVM](https://ethereum.org/en/developers/docs/evm/) chains you want to use Sablier on, you will need to use a different contract address. Sablier runs on top of one single master contract that manages all streams.
+Depending on what [EVM](https://ethereum.org/en/developers/docs/evm/) chains you want to use Sablier on, you will need
+to use a different contract address. Sablier runs on top of one single master contract that manages all streams.
 
 ## Official deployments
 
-Official deployments are deployments made by the Sablier team and supported in the [official user interface](https://pay.sablier.finance).
+Official deployments are deployments made by the Sablier team and supported in the
+[official user interface](https://pay.sablier.finance).
 
 ### Sablier v1.1
 
@@ -34,7 +36,8 @@ _This is an outdated deployment_.
 
 ## Unofficial deployments
 
-Unofficial deployments are deployments made by external teams and not supported in the [official user interface](https://pay.sablier.finance).
+Unofficial deployments are deployments made by external teams and not supported in the
+[official user interface](https://pay.sablier.finance).
 
 | Chain | Address                                                                                                                | Deployer                                   |
 | ----- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
@@ -46,7 +49,8 @@ If you want to use the Sablier interfaces on a testnet, you need to get some tes
 go to the Etherscan page of the associated token, tap the "Write Contract" tab, connect your Ethereum wallet and call
 the `mint` method.
 
-Note that the testnet token has 18 decimals, so you may want to use a [unit converter](https://tools.deth.net/token-unit-conversion).
+Note that the testnet token has 18 decimals, so you may want to use a
+[unit converter](https://tools.deth.net/token-unit-conversion).
 
 | Chain      | Network | Ethereum address                                                                                                             |
 | ---------- | ------- | ---------------------------------------------------------------------------------------------------------------------------- |

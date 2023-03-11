@@ -11,8 +11,9 @@ the blockchain. As soon as the chain clock hits the start time of the stream, a 
 "transferred" from the sender to the recipient once every second.
 
 We used scare quotes because what actually happens is not a transfer, but rather an abstract allocation of funds. Every
-second, the in-contract allowance of the sender decreases. while the recipient's allocation increases, even if the tokens are not transferred
-to the recipient. Actually transferring the tokens would be excessively expensive in terms of gas costs.
+second, the in-contract allowance of the sender decreases. while the recipient's allocation increases, even if the
+tokens are not transferred to the recipient. Actually transferring the tokens would be excessively expensive in terms of
+gas costs.
 
 ```solidity
 function createStream(address recipient, uint256 deposit, address tokenAddress, uint256 startTime, uint256 stopTime) returns (uint256)
@@ -27,19 +28,24 @@ function createStream(address recipient, uint256 deposit, address tokenAddress, 
 - `RETURN`: The stream's id as an unsigned integer on success, reverts on error.
 
 :::caution
-Before creating a stream, users must first [approve](https://eips.ethereum.org/EIPS/eip-20#approve) the Sablier contract to access their token balance.
+
+Before creating a stream, users must first [approve](https://eips.ethereum.org/EIPS/eip-20#approve) the Sablier contract
+to access their token balance.
+
 :::
 
 :::warning
+
 The transaction must be processed by the Ethereum blockchain before the start time of the stream, or otherwise the
 contract will revert with a "start time before block.timestamp" message.
+
 :::
 
 ### The Deposit Gotcha
 
 The deposit must be a multiple of the difference between the stop time and the start time, or otherwise the contract
-reverts with a "deposit not multiple of time delta" message. In practice, this means that you may not able to always use exact
-amounts like 3,000. You may have to divide the fixed deposit by the time delta and subtract the remainder from the
+reverts with a "deposit not multiple of time delta" message. In practice, this means that you may not able to always use
+exact amounts like 3,000. You may have to divide the fixed deposit by the time delta and subtract the remainder from the
 initial number. Thus you may have to stream a value that is very, very close to the fixed deposit, but not quite it.
 
 For example, if:
@@ -88,9 +94,9 @@ await createStreamTx.wait();
 
 ## Withdraw from Stream
 
-The withdraw from stream function transfers an amount of tokens from the Sablier contract to the recipient's account. The
-withdrawn amount must be less than or equal to the available [balance](./constant-functions#balance-of). This function can only be
-called by the sender or the recipient of the stream, not any third-party.
+The withdraw from stream function transfers an amount of tokens from the Sablier contract to the recipient's account.
+The withdrawn amount must be less than or equal to the available [balance](./constant-functions#balance-of). This
+function can only be called by the sender or the recipient of the stream, not any third-party.
 
 ```solidity
 function withdrawFromStream(uint256 streamId, uint256 amount) returns (bool);
@@ -101,7 +107,9 @@ function withdrawFromStream(uint256 streamId, uint256 amount) returns (bool);
 - `RETURN`: True on success, reverts on error.
 
 :::info
+
 To be able to call this function, you have to wait until the clock goes past the start time of the stream.
+
 :::
 
 ### Solidity
@@ -128,9 +136,10 @@ await withdrawFromStreamTx.wait();
 ## Cancel Stream
 
 The cancel stream function revokes a previously created stream and returns the tokens back to the sender and/or the
-recipient. If the chain clock did not hit the start time, all the tokens is returned to the sender. If the chain clock did go
-past the start time, but not past the stop time, the sender and the recipient each get a pro-rata amount. Finally, if
-the chain clock went past the stop time, all the tokens goes the recipient. This function can be called only by the sender.
+recipient. If the chain clock did not hit the start time, all the tokens is returned to the sender. If the chain clock
+did go past the start time, but not past the stop time, the sender and the recipient each get a pro-rata amount.
+Finally, if the chain clock went past the stop time, all the tokens goes the recipient. This function can be called only
+by the sender.
 
 ```solidity
 function cancelStream(uint256 streamId) returns (bool);

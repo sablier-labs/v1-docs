@@ -53,8 +53,10 @@ function balanceOf(uint256 streamId, address who) view returns (uint256)
 - `RETURN`: The available balance in units of the underlying ERC-20 token.
 
 :::info
-This is the amount of tokens that can be withdrawn from the contract, not the total amount of tokens streamed. If the contract streamed 1,000
-tokens to Bob, but Bob withdrew 400 tokens already, this function will return 600 and not 1,000.
+
+This is the amount of tokens that can be withdrawn from the contract, not the total amount of tokens streamed. If the
+contract streamed 1,000 tokens to Bob, but Bob withdrew 400 tokens already, this function will return 600 and not 1,000.
+
 :::
 
 ### Solidity
@@ -87,8 +89,7 @@ is 0 instead.
 function deltaOf(uint256 streamId) view returns (uint256)‌
 ```
 
-`streamId`: The id of the stream for which to query the delta.
-`RETURN`: The time delta in seconds.
+`streamId`: The id of the stream for which to query the delta. `RETURN`: The time delta in seconds.
 
 ### Solidity
 
@@ -111,10 +112,11 @@ const delta = await sablier.deltaOf(streamId);
 ## Error Table
 
 The table below lists all possible reasons for reverting a contract call that creates, withdraws from or cancels a
-stream. The "Id" column is just a counter used in this table - the smart contract does not yield error codes, just strings.
+stream. The "Id" column is just a counter used in this table - the smart contract does not yield error codes, just
+strings.
 
 | Number | Error                                                   | Reason                                                                                                                  |
-| ------ | ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------  |
+| ------ | ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | 1      | stream does not exist                                   | The provided stream id does not point to a valid stream                                                                 |
 | 2      | caller is not the sender or the recipient of the stream | The contract call originates from an unauthorized third-party                                                           |
 | 3      | SafeERC20: low-level call failed                        | Possibly insufficient allowance, but not necessarily so                                                                 |
@@ -131,5 +133,9 @@ stream. The "Id" column is just a counter used in this table - the smart contrac
 | 14     | recipient balance calculation error                     | Happens only when streaming an absurdly high number of tokens (close to 2^256)                                          |
 
 :::info
-The contract call could revert with [no reason](https://vmexceptionwhileprocessingtransactionrevert.com/) provided. In this case, you probably did not approve the Sablier contract to spend your token balance, although this is not necessarily the case. Ping us on [Discord](https://discord.gg/bSwRCwWRsT) if you get stuck.
+
+The contract call could revert with [no reason](https://vmexceptionwhileprocessingtransactionrevert.com/) provided. In
+this case, you probably did not approve the Sablier contract to spend your token balance, although this is not
+necessarily the case. Ping us on [Discord](https://discord.gg/bSwRCwWRsT) if you get stuck.
+
 :::

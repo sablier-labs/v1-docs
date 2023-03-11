@@ -6,7 +6,8 @@ sidebar_position: 2
 
 ### What is Ethereum?
 
-Sablier is built on top of Ethereum, a global, open-source platform for decentralized applications. You can read more about it on their [official website](https://ethereum.org).
+Sablier is built on top of Ethereum, a global, open-source platform for decentralized applications. You can read more
+about it on their [official website](https://ethereum.org).
 
 ### What are smart contracts?
 
@@ -18,7 +19,8 @@ Permission-less scripts that:
 
 ### What are Arbitrum, Avalanche, BSC, Optimism, Polygon and Ronin?
 
-These are Ethereum-like chains that can run Ethereum smart contracts. Sablier is available on all of these chains. Please refer to their associated documentation for more information:
+These are Ethereum-like chains that can run Ethereum smart contracts. Sablier is available on all of these chains.
+Please refer to their associated documentation for more information:
 
 - [Arbitrum One](https://developer.offchainlabs.com/)
 - [Avalanche](https://docs.avax.network/)
@@ -29,9 +31,11 @@ These are Ethereum-like chains that can run Ethereum smart contracts. Sablier is
 
 ### What is ERC-20?
 
-Acronym that stands the "Ethereum Requests for Comments" number 20. It is the most popular technical standard on Ethereum and can be used for printing a currency.
+Acronym that stands the "Ethereum Requests for Comments" number 20. It is the most popular technical standard on
+Ethereum and can be used for printing a currency.
 
-Sablier is compatible with ERC-20 tokens only, such as [DAI](https://makerdao.com/) or [USDC](https://www.coinbase.com/usdc).
+Sablier is compatible with ERC-20 tokens only, such as [DAI](https://makerdao.com/) or
+[USDC](https://www.coinbase.com/usdc).
 
 ### What is a stream?
 

@@ -18,5 +18,5 @@ A token stream has six properties:
 
 ## Example
 
-Imagine a 3,000 DAI salary paid by Alice to Bob over the whole month of January. The start time would be
-Jan 1 and the stop time Feb 1. Every second makes Bob richer; on Jan 10, he would have earned approximately 1,000 DAI.
+Imagine a 3,000 DAI salary paid by Alice to Bob over the whole month of January. The start time would be Jan 1 and the
+stop time Feb 1. Every second makes Bob richer; on Jan 10, he would have earned approximately 1,000 DAI.

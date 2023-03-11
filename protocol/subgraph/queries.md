@@ -5,7 +5,8 @@ title: Sample Queries
 
 Below are some sample queries you can use to gather information from the Sablier contracts.
 
-You can build your own queries using a [GraphQL Explorer](https://graphiql-online.com/graphiql) and enter your endpoint to limit the data to exactly what you need.
+You can build your own queries using a [GraphQL Explorer](https://graphiql-online.com/graphiql) and enter your endpoint
+to limit the data to exactly what you need.
 
 ### Sender Streams
 

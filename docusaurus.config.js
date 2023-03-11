@@ -36,11 +36,11 @@ const config = {
         indexName: "sablier",
       },
       announcementBar: {
-        id: 'start_time_banner',
+        id: "start_time_banner",
         content:
-				'Please note that a stream creation transaction MUST be processed by the blockchain before the start time of the stream, otherwise it will fail. Learn more about this <a target="_blank" rel="noopener noreferrer" href="/protocol/faq/known-issues">here</a>, or reach out on <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/bSwRCwWRsT">Discord</a>.',
-        backgroundColor: '#E77B3B',
-        textColor: '#fff',
+          'Please note that a stream creation transaction MUST be processed by the blockchain before the start time of the stream, otherwise it will fail. Learn more about this <a target="_blank" rel="noopener noreferrer" href="/protocol/faq/known-issues">here</a>, or reach out on <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/bSwRCwWRsT">Discord</a>.',
+        backgroundColor: "#E77B3B",
+        textColor: "#fff",
         isCloseable: true,
       },
       colorMode: {

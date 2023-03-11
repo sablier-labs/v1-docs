@@ -4,9 +4,11 @@ title: Data
 sidebar_position: 5
 ---
 
-Our blockchain data can be accessed via our subgraphs, which you can interact with via a GraphQL client (we recommend using [Apollo](https://github.com/apollographql/apollo-client)).
+Our blockchain data can be accessed via our subgraphs, which you can interact with via a GraphQL client (we recommend
+using [Apollo](https://github.com/apollographql/apollo-client)).
 
-If you want to see some example queries, see the README at [sablierhq/sablier-subgraph](https://github.com/sablierhq/sablier-subgraph).
+If you want to see some example queries, see the README at
+[sablierhq/sablier-subgraph](https://github.com/sablierhq/sablier-subgraph).
 
 | Network          | Link                                                                     |
 | ---------------- | ------------------------------------------------------------------------ |
