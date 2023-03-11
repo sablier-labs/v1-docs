@@ -38,12 +38,11 @@
     "clear": "docusaurus clear",
     "deploy": "docusaurus deploy",
     "docusaurus": "docusaurus",
-    "prettier": "prettier --config \"./.prettierrc.yml\" --ignore-path \"./.prettierignore\" --write \"**/*.{js,json,md,ts,yml}\"",
     "prettier:check": "prettier --check --config \"./.prettierrc.yml\" --ignore-path \"./.prettierignore\" \"**/*.{js,json,md,ts,yml}\"",
+    "prettier:write": "prettier --config \"./.prettierrc.yml\" --ignore-path \"./.prettierignore\" --write \"**/*.{js,json,md,ts,yml}\"",
     "serve": "docusaurus serve",
     "start": "docusaurus start",
     "swizzle": "docusaurus swizzle",
-    "write-heading-ids": "docusaurus write-heading-ids",
-    "write-translations": "docusaurus write-translations"
+    "write-heading-ids": "docusaurus write-heading-ids"
   }
 }
