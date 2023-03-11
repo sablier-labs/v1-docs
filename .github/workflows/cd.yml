@@ -1,9 +1,11 @@
-name: "Continuous Deployment to Vercel"
+name: "Continuous Deployment"
+
+concurrency:
+  group: ${{github.workflow}}-${{github.ref}}
+  cancel-in-progress: true
 
 on:
   pull_request:
-    branches:
-      - "main"
   push:
     branches:
       - "main"
@@ -38,8 +40,8 @@ jobs:
           github-comment: false
           github-token: "${{ secrets.GITHUB_TOKEN }}"
           scope: "${{ secrets.VERCEL_ORG_ID }}"
-          vercel-token: "${{ secrets.VERCEL_TOKEN }}"
           vercel-args: "--confirm --prod"
           vercel-org-id: "${{ secrets.VERCEL_ORG_ID }}"
           vercel-project-id: "${{ secrets.VERCEL_PROJECT_ID }}"
+          vercel-token: "${{ secrets.VERCEL_TOKEN }}"
           working-directory: "."
