@@ -121,34 +121,34 @@ const config = {
       navbar: {
         items: [
           {
-            href: "/protocol/guides/getting-started",
             label: "Guides",
             position: "left",
+            to: "/protocol/guides/getting-started",
           },
           {
-            href: "/protocol/contracts/non-constant-functions",
             label: "Contracts",
             position: "left",
+            to: "/protocol/contracts/non-constant-functions",
           },
           {
-            href: "/protocol/subgraph/endpoints",
             label: "Subgraph",
             position: "left",
+            to: "/protocol/subgraph/endpoints",
           },
           {
-            href: "/protocol/faq/basics",
             label: "FAQ",
             position: "left",
+            to: "/protocol/faq/basics",
           },
           {
-            href: "https://discord.gg/bSwRCwWRsT",
             label: "Discord",
             position: "right",
+            to: "https://discord.gg/bSwRCwWRsT",
           },
           {
-            href: "https://github.com/sablierhq",
             label: "GitHub",
             position: "right",
+            to: "https://github.com/sablierhq",
           },
         ],
         logo: {
