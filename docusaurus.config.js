@@ -92,11 +92,7 @@ const config = {
             items: [
               {
                 label: "Core Protocol",
-                href: "https://github.com/sablierhq/v2-core",
-              },
-              {
-                label: "Periphery Contracts",
-                href: "https://github.com/sablierhq/v2-periphery",
+                href: "https://github.com/sablierhq/sablier",
               },
               {
                 label: "Docs",
