@@ -48,14 +48,13 @@ const config = {
         defaultMode: "light",
 
         // Hides the switch in the navbar. Useful if you want to support a single color mode.
-        disableSwitch: true,
+        disableSwitch: false,
 
         // Whether we should use the `prefers-color-scheme media-query` using user system preferences, instead of the
         // hardcoded `defaultMode`.
         respectPrefersColorScheme: true,
       },
       footer: {
-        copyright: `Copyright © ${new Date().getFullYear()} Sablier Labs Ltd`,
         links: [
           {
             title: "Company",
@@ -65,14 +64,26 @@ const config = {
                 href: "https://sablier.finance",
               },
               {
-                label: "Branding",
-                href: "https://github.com/sablierhq/branding",
+                label: "Risk Notice",
+                href: "https://sablier.finance/risk-notice",
+              },
+              {
+                label: "Terms of Service",
+                href: "https://sablier.finance/terms-of-service",
+              },
+              {
+                label: "Privacy Policy",
+                href: "https://docs.google.com/document/d/10OgbKJkoLnZ_pJtF6SAfcP7ufOC18K3N39MH538XeiI",
               },
             ],
           },
           {
             title: "Community",
             items: [
+              {
+                label: "Branding",
+                href: "https://github.com/sablierhq/branding",
+              },
               {
                 label: "Twitter",
                 href: "https://twitter.com/sablier",
