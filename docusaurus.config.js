@@ -81,10 +81,6 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Branding",
-                href: "https://github.com/sablierhq/branding",
-              },
-              {
                 label: "Twitter",
                 href: "https://twitter.com/sablier",
               },
@@ -95,6 +91,10 @@ const config = {
               {
                 label: "Blog",
                 href: "https://medium.com/sablier",
+              },
+              {
+                label: "Branding",
+                href: "https://github.com/sablierhq/branding",
               },
             ],
           },
