@@ -61,7 +61,7 @@ const config = {
             items: [
               {
                 label: "About",
-                href: "https://sablier.finance",
+                href: "https://sablierlabs.co.uk",
               },
               {
                 label: "Risk Notice",
