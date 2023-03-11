@@ -106,8 +106,8 @@ const config = {
                 href: "https://github.com/sablierhq/sablier",
               },
               {
-                label: "Docs",
-                href: "https://github.com/sablierhq/docs",
+                label: "Deployments",
+                href: "https://docs.sablier.finance/protocol/guides/chains",
               },
               {
                 label: "Subgraph",
