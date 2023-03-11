@@ -9,7 +9,7 @@ It's the first of its kind to have ever been built in crypto, tracing its origin
 stream a movie on Netflix or a song on Spotify, so you can stream tokens by the second on Sablier.
 
 If you're a developer, head over to the [guides](./guides/getting-started) section or check the
-[technical reference](./technical-reference/streams). Conversely, if you're just interested in learning more about
+[Contracts](./contracts/non-constant-functions) section. Conversely, if you're just interested in learning more about
 Sablier from a non-technical standpoint, head over to our [FAQ](/protocol/faq/basics).
 
 :::info

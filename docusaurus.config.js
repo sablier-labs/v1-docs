@@ -121,23 +121,23 @@ const config = {
       navbar: {
         items: [
           {
-            href: "/protocol/faq/basics",
-            label: "FAQ",
-            position: "left",
-          },
-          {
             href: "/protocol/guides/getting-started",
             label: "Guides",
             position: "left",
           },
           {
-            href: "/protocol/technical-reference/streams",
-            label: "Technical Reference",
+            href: "/protocol/contracts/non-constant-functions",
+            label: "Contracts",
             position: "left",
           },
           {
             href: "/protocol/subgraph/endpoints",
             label: "Subgraph",
+            position: "left",
+          },
+          {
+            href: "/protocol/faq/basics",
+            label: "FAQ",
             position: "left",
           },
           {

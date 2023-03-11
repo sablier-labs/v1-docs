@@ -1,7 +1,7 @@
 ---
 id: streams
 title: Streams
-sidebar_position: 1
+sidebar_position: 4
 ---
 
 Every interaction with the Sablier protocol is in relation to a specific "token stream". This is how we refer to a

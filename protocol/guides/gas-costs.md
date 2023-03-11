@@ -1,7 +1,7 @@
 ---
 id: gas-costs
 title: Gas Costs
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 The gas usage of the Sablier protocol is not deterministic and varies by user. Calls to third-party contracts, such as
