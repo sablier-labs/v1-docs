@@ -131,9 +131,9 @@ const config = {
             to: "/protocol/contracts/non-constant-functions",
           },
           {
-            label: "Subgraph",
+            label: "Subgraphs",
             position: "left",
-            to: "/protocol/subgraph/endpoints",
+            to: "/protocol/subgraphs/endpoints",
           },
           {
             label: "FAQ",
