@@ -5,7 +5,7 @@ title: Endpoints
 
 Sablier has a GraphQL API Endpoint hosted by [The Graph](https://thegraph.com/docs/about/introduction#what-the-graph-is)
 called a subgraph for indexing and organizing data from the Sablier smart contracts. The code repository for our
-subgraph can be found [here](https://github.com/sablierhq/subgraph).
+subgraph can be found [here](https://github.com/sablier-labs/subgraph).
 
 ### Official subgraphs
 
@@ -14,11 +14,11 @@ Official subgraphs are subgraphs maintained by the Sablier team.
 | Chain     | Explorer page                                                                                  | API endpoint                                                                                                       |
 | --------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | Ethereum  | [Page](https://thegraph.com/explorer/subgraph?id=A5XzhYZ4muyRegVTYmwWbCbKWvD4LTWqac43CEGTEGdK) | [Endpoint](https://gateway.thegraph.com/api/[api-key]/subgraphs/id/A5XzhYZ4muyRegVTYmwWbCbKWvD4LTWqac43CEGTEGdK)\* |
-| Optimism  | [Page](https://thegraph.com/hosted-service/subgraph/sablierhq/sablier-optimism)                | [Endpoint](https://api.thegraph.com/subgraphs/name/sablierhq/sablier-optimism)                                     |
-| Arbitrum  | [Page](https://thegraph.com/hosted-service/subgraph/sablierhq/sablier-arbitrum)                | [Endpoint](https://api.thegraph.com/subgraphs/name/sablierhq/sablier-arbitrum)                                     |
-| Polygon   | [Page](https://thegraph.com/hosted-service/subgraph/sablierhq/sablier-matic)                   | [Endpoint](https://api.thegraph.com/subgraphs/name/sablierhq/sablier-matic)                                        |
-| Avalanche | [Page](https://thegraph.com/hosted-service/subgraph/sablierhq/sablier-avalanche)               | [Endpoint](https://api.thegraph.com/subgraphs/name/sablierhq/sablier-avalanche)                                    |
-| BSC       | [Page](https://thegraph.com/hosted-service/subgraph/sablierhq/sablier-bsc)                     | [Endpoint](https://api.thegraph.com/subgraphs/name/sablierhq/sablier-bsc)                                          |
+| Optimism  | [Page](https://thegraph.com/hosted-service/subgraph/sablier-labs/sablier-optimism)             | [Endpoint](https://api.thegraph.com/subgraphs/name/sablier-labs/sablier-optimism)                                  |
+| Arbitrum  | [Page](https://thegraph.com/hosted-service/subgraph/sablier-labs/sablier-arbitrum)             | [Endpoint](https://api.thegraph.com/subgraphs/name/sablier-labs/sablier-arbitrum)                                  |
+| Polygon   | [Page](https://thegraph.com/hosted-service/subgraph/sablier-labs/sablier-matic)                | [Endpoint](https://api.thegraph.com/subgraphs/name/sablier-labs/sablier-matic)                                     |
+| Avalanche | [Page](https://thegraph.com/hosted-service/subgraph/sablier-labs/sablier-avalanche)            | [Endpoint](https://api.thegraph.com/subgraphs/name/sablier-labs/sablier-avalanche)                                 |
+| BSC       | [Page](https://thegraph.com/hosted-service/subgraph/sablier-labs/sablier-bsc)                  | [Endpoint](https://api.thegraph.com/subgraphs/name/sablier-labs/sablier-bsc)                                       |
 
 \* An [API key](https://thegraph.com/docs/en/querying/managing-api-keys/) needed is needed to query our Ethereum
 subgraph, as it's based on [The Graph](https://thegraph.com)'s decentralized network. Replace `[api-key]` with your API
