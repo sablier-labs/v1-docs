@@ -11,7 +11,7 @@ export default function HomepageHeader() {
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">The cryptoasset streaming protocol.</p>
+        <p className="hero__subtitle">The token streaming protocol.</p>
         <div className={styles.buttons}>
           <Link className="button button--primary button--lg" to="/protocol/introduction">
             Learn More
